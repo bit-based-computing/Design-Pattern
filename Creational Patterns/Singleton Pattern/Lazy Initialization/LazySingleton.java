@@ -3,7 +3,7 @@ class LazySingleton {
     // The instance initially null
     private static LazySingleton instance;
 
-    //Private constraction to prevent instantiation
+    //Private constructor to prevent instantiation
     private LazySingleton() {}
 
     // Method to get instance

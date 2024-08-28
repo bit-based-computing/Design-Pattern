@@ -7,15 +7,15 @@ This approach creates the singleton object only when it's needed.
     // The instance initially null
     private static LazySingleton instance;
     
-        //Private constraction to prevent instantiation
+        //Private constructor to prevent instantiation
         private LazySingleton() {}
     
         // Method to get instance
         public static LazySingleton getInstance() {
     
-            // Check is instance null
+            // Check if instance is null
             if(instance == null) {
-                // If null create a instance
+                // If null create a new instance
                 instance = new LazySingleton();
             }
             // Return instance
